@@ -1,0 +1,15 @@
+// Partials / _common.scss
+
+// Reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Body
+body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 2000px;
+}

@@ -1,0 +1,23 @@
+// Sass / app.scss
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+// Common
+@import "partials/_mixins";
+@import "partials/_variables";
+@import "partials/_common";
+
+// Structure
+@import "partials/structure/_header";
+@import "partials/structure/_main";
+@import "partials/structure/_footer";
+
+// Ui
+@import "partials/ui/_common";

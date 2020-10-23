@@ -1,0 +1,23 @@
+// Partials / structure / _footer.scss
+
+// Footer
+footer {
+  .ui {
+    bottom: $external_margin_ui;
+
+    .corner .crop_icon {
+      transform: rotate(180deg);
+    }
+
+    & .bottom_ui {
+      padding: 0 $corner_width_height * 4 0 $corner_width_height * 4;
+
+      & .colors_palette > .square {
+        height: $square_colors_palette_size;
+        width: $square_colors_palette_size;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+// end Footer

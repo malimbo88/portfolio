@@ -1,0 +1,41 @@
+// Partials / ui / _common.scss
+
+// Ui
+div.ui {
+  width: 100%;
+
+  .crop_marks {
+    width: 100%;
+
+
+    .corner {
+      width: $corner_width_height * 2 + $external_margin_ui;
+      height: $corner_width_height;
+      position: relative;
+
+      & > .crop_icon {
+        font-size: $ui_icon_font_size;
+      }
+
+      &.left > .glitch {
+        right: 0px;
+      }
+
+      &.right > .glitch {
+        left: 0;
+      }
+
+      & > .glitch_top, & > .glitch_bottom {
+        @include crop_marks_glitch;
+      }
+
+      & > .glitch_top {
+        color: rgb(0,255,0);
+      }
+
+      & > .glitch_bottom {
+        color: rgb(0,0,255);
+      }
+    }
+  }
+}
