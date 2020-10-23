@@ -3,14 +3,13 @@
 // Footer
 footer {
   .ui {
-    bottom: $external_margin_ui;
-
     .corner .crop_icon {
       transform: rotate(180deg);
     }
 
     & .bottom_ui {
-      padding: $square_colors_square_padding $corner_width_height * 4 $square_colors_square_padding $corner_width_height * 4;
+      padding-left: $padding_left_right_ui;
+      padding-right: $padding_left_right_ui;
 
       & .colors_palette > .square {
         height: $square_colors_palette_size;

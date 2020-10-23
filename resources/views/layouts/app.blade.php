@@ -9,13 +9,13 @@
   <body>
 
     {{-- Wrapper --}}
-    <div class="main_wrapper">
+    <div class="main_wrapper d-flex flex-column justify-space-between">
 
       {{-- Header --}}
       @include("partials.structure.header")
 
       {{-- Main --}}
-      <main>
+      <main class="flex-grow-1">
         @yield('content')
       </main>
       {{-- end Main --}}

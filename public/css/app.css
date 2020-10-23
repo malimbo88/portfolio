@@ -17056,15 +17056,17 @@ readers do not read off random characters that represent icons */
 body {
   width: 100%;
   overflow-x: hidden;
-  height: 2000px;
+  height: 100vh;
 }
 
-header .ui {
-  top: 10px;
+.main_wrapper {
+  width: inherit;
+  height: 100%;
 }
 
 header .ui .top_ui {
-  padding: 10px 120px 10px 120px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 header .ui .top_ui .colors_palette > .square {
@@ -17092,8 +17094,30 @@ header .ui .top_ui .colors_palette > .square.color_5 {
   background-color: #14ade8;
 }
 
-footer .ui {
-  bottom: 10px;
+main {
+  height: 100%;
+  width: 100%;
+}
+
+main > .content_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+main > .content_wrapper > .content_left {
+  height: 100%;
+  width: 50px;
+}
+
+main > .content_wrapper > .content_middle {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+main > .content_wrapper > .content_right {
+  height: 100%;
+  width: 50px;
 }
 
 footer .ui .corner .crop_icon {
@@ -17101,7 +17125,8 @@ footer .ui .corner .crop_icon {
 }
 
 footer .ui .bottom_ui {
-  padding: 10px 120px 10px 120px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 footer .ui .bottom_ui .colors_palette > .square {
@@ -17114,18 +17139,22 @@ div.ui {
   width: 100%;
 }
 
+div.ui > [class*=_ui] {
+  height: 37.5px;
+}
+
 div.ui .crop_marks {
   width: 100%;
 }
 
 div.ui .crop_marks .corner {
-  width: 70px;
-  height: 30px;
+  width: 37.5px;
+  height: 25px;
   position: relative;
 }
 
 div.ui .crop_marks .corner > .crop_icon {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 div.ui .crop_marks .corner.left > .glitch {
@@ -17292,7 +17321,7 @@ div.ui .crop_marks .corner > .glitch_bottom {
   }
 
   50% {
-    bottom: -24px;
+    bottom: 8px;
     opacity: 0.5;
   }
 
@@ -17309,7 +17338,7 @@ div.ui .crop_marks .corner > .glitch_bottom {
   }
 
   50% {
-    bottom: -24px;
+    bottom: 8px;
     opacity: 0.5;
   }
 

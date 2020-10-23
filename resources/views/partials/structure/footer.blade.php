@@ -1,8 +1,8 @@
-{{-- Partials / footer.blade.php --}}
+{{-- Partials / structure / footer.blade.php --}}
 
 {{-- Footer --}}
 <footer>
-  <div class="ui fixed-bottom">
+  <div class="ui">
     <div class="crop_marks d-flex justify-content-between">
       <div class="corner left d-flex justify-content-end align-items-center">
         <span id="animation" class="crop_icon glitch glitch_top">+</span>
@@ -15,7 +15,7 @@
         <span id="animation" class="crop_icon main_icon">+</span>
       </div>
     </div>
-    <div class="bottom_ui d-flex justify-content-between">
+    <div class="bottom_ui d-flex justify-content-between align-items-start">
       <div class="colors_palette d-flex justify-content-start">
         <span class="square color_1"></span>
         <span class="square color_2"></span>

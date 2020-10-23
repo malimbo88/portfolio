@@ -11,5 +11,11 @@
 body {
   width: 100%;
   overflow-x: hidden;
-  height: 2000px;
+  height: 100vh;
+}
+
+// Main wrapper
+.main_wrapper {
+  width: inherit;
+  height: 100%;
 }

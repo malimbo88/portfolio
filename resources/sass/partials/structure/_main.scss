@@ -1,0 +1,29 @@
+// Partials / structure / _main.scss
+
+main {
+  height: 100%;
+  width: 100%;
+
+  & > .content_wrapper {
+    height: 100%;
+    width: 100%;
+    // margin-left: $padding-left-right-warpper-main;
+    // margin-right: $padding-left-right-warpper-main;
+
+    & > .content_left {
+      height: 100%;
+      width: $content-left-right-width;
+    }
+
+    & > .content_middle {
+      height: 100%;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    & > .content_right {
+      height: 100%;
+      width: $content-left-right-width;
+    }
+  }
+}

@@ -1,9 +1,9 @@
-{{-- Partials / header.blade.php --}}
+{{-- Partials / structure / header.blade.php --}}
 
 {{-- Header --}}
 <header>
-  <div class="ui fixed-top">
-    <div class="top_ui d-flex justify-content-between">
+  <div class="ui">
+    <div class="top_ui d-flex justify-content-between align-items-end">
       <div class="d-flex align-items-end">
         <span>Info sul mio portfolio</span>
       </div>

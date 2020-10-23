@@ -4,13 +4,17 @@
 div.ui {
   width: 100%;
 
+  & > [class*="_ui"] {
+    height: $height_top_bottom_ui;
+  }
+
   .crop_marks {
     width: 100%;
 
 
     .corner {
-      width: $corner_width_height * 2 + $external_margin_ui;
-      height: $corner_width_height;
+      width: $corner_width;
+      height: $corner_height;
       position: relative;
 
       & > .crop_icon {

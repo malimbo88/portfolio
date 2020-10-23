@@ -12,11 +12,13 @@ $header_square_4: #e4eff7;
 $header_square_5: #14ade8;
 
 // -> Style
-$external_margin_ui: 10px;
-$corner_width_height: 30px;
-$ui_icon_font_size: 30px;
+$corner_height: 25px;
+$ui_icon_font_size: 25px;
+$height_top_bottom_ui: $corner_height * 1.5;
 $square_colors_palette_size: 20px;
 $square_colors_square_padding: 10px;
+$corner_width: $corner_height * 1.5;
+$padding_left_right_ui: $corner_height * 4;
 
 // -> Glitch animation
 // ->-> Initial state
@@ -25,3 +27,8 @@ $initial_opacity_crop_icon: 0;
 $initial_opacity_main_crop_icon: 1;
 $animation_opacity_crop_icons: 0.5;
 $difference_between_glitch_state: 8px;
+$bottom_final_state_position: $initial_bottom_position_crop_icon + $difference_between_glitch_state;
+$top_final_state_position: $initial_bottom_position_crop_icon + $difference_between_glitch_state * 2;
+
+// Main
+$content-left-right-width: $corner_height * 2;

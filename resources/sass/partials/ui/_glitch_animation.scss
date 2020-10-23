@@ -53,7 +53,7 @@
     opacity: $initial_opacity_crop_icon;
   }
   50% {
-    bottom: $initial_bottom_position_crop_icon + ($difference_between_glitch_state * 2);
+    bottom: $top_final_state_position;
     opacity: $animation_opacity_crop_icons;
   }
   100% {
@@ -83,7 +83,7 @@
     opacity: $initial_opacity_crop_icon;
   }
   50% {
-    bottom: $initial_bottom_position_crop_icon - ($difference_between_glitch_state * 2);
+    bottom: $top_final_state_position;
     opacity: $animation_opacity_crop_icons;
   }
   100% {
