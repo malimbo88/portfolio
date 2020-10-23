@@ -17064,13 +17064,32 @@ header .ui {
 }
 
 header .ui .top_ui {
-  padding: 0 120px 0 120px;
+  padding: 10px 120px 10px 120px;
 }
 
 header .ui .top_ui .colors_palette > .square {
-  height: 30px;
-  width: 30px;
-  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+}
+
+header .ui .top_ui .colors_palette > .square.color_1 {
+  background-color: #004c6a;
+}
+
+header .ui .top_ui .colors_palette > .square.color_2 {
+  background-color: #0087b7;
+}
+
+header .ui .top_ui .colors_palette > .square.color_3 {
+  background-color: #a1cce5;
+}
+
+header .ui .top_ui .colors_palette > .square.color_4 {
+  background-color: #e4eff7;
+}
+
+header .ui .top_ui .colors_palette > .square.color_5 {
+  background-color: #14ade8;
 }
 
 footer .ui {
@@ -17082,12 +17101,12 @@ footer .ui .corner .crop_icon {
 }
 
 footer .ui .bottom_ui {
-  padding: 0 120px 0 120px;
+  padding: 10px 120px 10px 120px;
 }
 
 footer .ui .bottom_ui .colors_palette > .square {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border: 1px solid black;
 }
 

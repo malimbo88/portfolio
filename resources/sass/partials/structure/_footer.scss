@@ -10,7 +10,7 @@ footer {
     }
 
     & .bottom_ui {
-      padding: 0 $corner_width_height * 4 0 $corner_width_height * 4;
+      padding: $square_colors_square_padding $corner_width_height * 4 $square_colors_square_padding $corner_width_height * 4;
 
       & .colors_palette > .square {
         height: $square_colors_palette_size;

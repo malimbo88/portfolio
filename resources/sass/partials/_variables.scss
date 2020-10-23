@@ -4,11 +4,19 @@
 // -> Colors
 $ui_primary_color: black;
 
+// ->-> Header Colors Plaette Square
+$header_square_1: #004c6a;
+$header_square_2: #0087b7;
+$header_square_3: #a1cce5;
+$header_square_4: #e4eff7;
+$header_square_5: #14ade8;
+
 // -> Style
 $external_margin_ui: 10px;
 $corner_width_height: 30px;
 $ui_icon_font_size: 30px;
-$square_colors_palette_size: 30px;
+$square_colors_palette_size: 20px;
+$square_colors_square_padding: 10px;
 
 // -> Glitch animation
 // ->-> Initial state
