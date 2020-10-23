@@ -1,0 +1,73 @@
+// Partials / ui / _glitch_animation
+
+#animation_scrollDown_glitchTop {
+  animation-name: scrollDown_glitchTop;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+#animation_scrollDown_glitchBottom {
+  animation-name: scrollDown_glitchBottom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+#animation_scrollUp_glitchTop {
+  animation-name: scrollUp_glitchTop;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+#animation_scrollUp_glitchBottom {
+  animation-name: scrollUp_glitchBottom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scrollDown_glitchTop {
+  from {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
+  }
+  to {
+    bottom: $initial_bottom_position_crop_icon + ($difference_between_glitch_state * 2);
+    opacity: 0.5;
+  }
+}
+
+@keyframes scrollDown_glitchBottom {
+  from {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
+  }
+  to {
+    bottom: $initial_bottom_position_crop_icon + ($difference_between_glitch_state * 1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes scrollUp_glitchTop {
+  from {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
+  }
+  to {
+    bottom: $initial_bottom_position_crop_icon - ($difference_between_glitch_state * 2);
+    opacity: 0.5;
+  }
+}
+
+@keyframes scrollUp_glitchBottom {
+  from {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
+  }
+  to {
+    bottom: $initial_bottom_position_crop_icon - ($difference_between_glitch_state * 1);
+    opacity: 0.5;
+  }
+}

@@ -17123,8 +17123,8 @@ div.ui .crop_marks .corner > .glitch_bottom {
   position: absolute;
   width: auto;
   height: auto;
-  bottom: -8px;
   z-index: -1;
+  bottom: -8px;
   opacity: 0;
 }
 

@@ -27,6 +27,8 @@ div.ui {
 
       & > .glitch_top, & > .glitch_bottom {
         @include crop_marks_glitch;
+        bottom: $initial_bottom_position_crop_icon;
+        opacity: $initial_opacity_crop_icon;
       }
 
       & > .glitch_top {
