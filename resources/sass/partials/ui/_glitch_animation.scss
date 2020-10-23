@@ -1,73 +1,109 @@
 // Partials / ui / _glitch_animation
 
-#animation_scrollDown_glitchTop {
-  animation-name: scrollDown_glitchTop;
-  animation-duration: 1s;
+// Glitch animation
+// -> Crop marks icon glitch
+#animation {
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-}
+  // Glitch main crop icon
+  &.main_icon.scroll_down,
+  &.main_icon.scroll_up {
+    animation-name: scroll_main;
+  }
 
-#animation_scrollDown_glitchBottom {
-  animation-name: scrollDown_glitchBottom;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-}
+  // Glitch top - Scroll down
+  &.glitch_top.scroll_down {
+    animation-name: scrollDown_glitchTop;
+  }
 
-#animation_scrollUp_glitchTop {
-  animation-name: scrollUp_glitchTop;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-}
+  // Glitch Bottom - Scroll down
+  &.glitch_bottom.scroll_down {
+    animation-name: scrollDown_glitchBottom;
+  }
 
-#animation_scrollUp_glitchBottom {
-  animation-name: scrollUp_glitchBottom;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
+  // Glitch Top - Scroll Up
+  &.glitch_top.scroll_up {
+    animation-name: scrollUp_glitchTop;
+  }
+
+  // Glitch Bottom - Scroll Up
+  &.glitch_bottom.scroll_up {
+    animation-name: scrollUp_glitchBottom;
+  }
+}
+// end Glitch animation
+
+// Glitch Animation Keyframe
+@keyframes scroll_main {
+  0% {
+    opacity: $initial_opacity_main_crop_icon;
+  }
+  50% {
+    opacity: $animation_opacity_crop_icons;
+  }
+  100% {
+    opacity: $initial_opacity_main_crop_icon;
+  }
 }
 
 @keyframes scrollDown_glitchTop {
-  from {
+  0% {
     bottom: $initial_bottom_position_crop_icon;
     opacity: $initial_opacity_crop_icon;
   }
-  to {
+  50% {
     bottom: $initial_bottom_position_crop_icon + ($difference_between_glitch_state * 2);
-    opacity: 0.5;
+    opacity: $animation_opacity_crop_icons;
+  }
+  100% {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
   }
 }
 
 @keyframes scrollDown_glitchBottom {
-  from {
+  0% {
     bottom: $initial_bottom_position_crop_icon;
     opacity: $initial_opacity_crop_icon;
   }
-  to {
+  50% {
     bottom: $initial_bottom_position_crop_icon + ($difference_between_glitch_state * 1);
-    opacity: 0.5;
+    opacity: $animation_opacity_crop_icons;
+  }
+  100% {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
   }
 }
 
 @keyframes scrollUp_glitchTop {
-  from {
+  0% {
     bottom: $initial_bottom_position_crop_icon;
     opacity: $initial_opacity_crop_icon;
   }
-  to {
+  50% {
     bottom: $initial_bottom_position_crop_icon - ($difference_between_glitch_state * 2);
-    opacity: 0.5;
+    opacity: $animation_opacity_crop_icons;
+  }
+  100% {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
   }
 }
 
 @keyframes scrollUp_glitchBottom {
-  from {
+  0% {
     bottom: $initial_bottom_position_crop_icon;
     opacity: $initial_opacity_crop_icon;
   }
-  to {
+  50% {
     bottom: $initial_bottom_position_crop_icon - ($difference_between_glitch_state * 1);
-    opacity: 0.5;
+    opacity: $animation_opacity_crop_icons;
+  }
+  100% {
+    bottom: $initial_bottom_position_crop_icon;
+    opacity: $initial_opacity_crop_icon;
   }
 }
+// end Glitch Animation Keyframe

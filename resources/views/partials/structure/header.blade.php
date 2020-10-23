@@ -17,14 +17,14 @@
     </div>
     <div class="crop_marks d-flex justify-content-between">
       <div class="corner left d-flex justify-content-end align-items-center">
-        <span class="crop_icon glitch glitch_top">+</span>
-        <span class="crop_icon glitch glitch_bottom">+</span>
-        <span class="crop_icon">+</span>
+        <span id="animation" class="crop_icon glitch glitch_top">+</span>
+        <span id="animation" class="crop_icon glitch glitch_bottom">+</span>
+        <span id="animation" class="crop_icon main_icon">+</span>
       </div>
       <div class="corner right d-flex justify-content-start align-items-center">
-        <span class="crop_icon glitch glitch_top">+</span>
-        <span class="crop_icon glitch glitch_bottom">+</span>
-        <span class="crop_icon">+</span>
+        <span id="animation" class="crop_icon glitch glitch_top">+</span>
+        <span id="animation" class="crop_icon glitch glitch_bottom">+</span>
+        <span id="animation" class="crop_icon main_icon">+</span>
       </div>
     </div>
   </div>
