@@ -60,13 +60,19 @@
           {{-- Behance --}}
           <li class="linkedin">
             <a href="https://www.behance.net/malimbo">
-              <i class="fab fa-behance"></i>
+              <i class="fab fa-behance-square"></i>
             </a>
           </li>
           {{-- Mail --}}
           <li class="linkedin">
             <a href="https://www.gmail.com">
               <i class="fas fa-at"></i>
+            </a>
+          </li>
+          {{-- Smile --}}
+          <li class="linkedin">
+            <a href="#">
+              <i class="fas fa-bomb"></i>
             </a>
           </li>
         </ul>

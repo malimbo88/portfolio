@@ -1,7 +1,14 @@
 // Partials / _variables
 
 // General
-$main_wrapper_external_padding:10px 30px 10px 30px;;
+$main_wrapper_external_padding:10px 30px 10px 30px;
+$general_font_size: 13px;
+$general_color: #000;
+
+// -> Fonts
+$font_courier: 'Courier Prime', monospace;
+$font_assistant: 'Assistant', sans-serif;
+$font_mplus: 'M PLUS 1p', sans-serif;
 
 //Ui Commons
 // -> Colors
@@ -15,11 +22,11 @@ $header_square_4: #e4eff7;
 $header_square_5: #14ade8;
 
 // -> Style
+$ui_font_weight: 300;
 $corner_height: 25px;
 $ui_icon_font_size: 25px;
 $height_top_bottom_ui: $corner_height * 1.5;
-$square_colors_palette_size: 20px;
-$square_colors_square_padding: 10px;
+$square_colors_palette_size: 15px;
 $corner_width: $corner_height * 1.5;
 $padding_left_right_ui: $corner_height * 4;
 
@@ -28,13 +35,27 @@ $padding_left_right_ui: $corner_height * 4;
 $initial_bottom_position_crop_icon: -8px;
 $initial_opacity_crop_icon: 0;
 $initial_opacity_main_crop_icon: 1;
-$animation_opacity_crop_icons: 0.5;
+
+// ->-> Final state
 $difference_between_glitch_state: 8px;
 $bottom_final_state_position: $initial_bottom_position_crop_icon + $difference_between_glitch_state;
 $top_final_state_position: $initial_bottom_position_crop_icon + $difference_between_glitch_state * 2;
+$animation_opacity_crop_icons: 0.5;
+
+// Header
+// -> Top ui
+$margin_right_icons_before: 2px;
 
 // Main
 $content-left-right-width: $corner_height * 1.5;
 
 // Footer
-$padding_social_icon: 0 20px 0 20px;
+$padding_social_icon: 0 10px 0 10px;
+$margin_square_colors: 5px;
+
+// ->-> Footer Colors Plaette Square
+$footer_square_1: #0094ff;
+$footer_square_2: #ff51af;
+$footer_square_3: #fff500;
+$footer_square_4: #000000;
+$footer_square_5: #f94c00;

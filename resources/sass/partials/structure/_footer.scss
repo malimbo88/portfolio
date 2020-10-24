@@ -23,9 +23,23 @@ footer {
 
       // Square colors
       & .colors_palette > .square {
-        height: $square_colors_palette_size;
-        width: $square_colors_palette_size;
-        border: 1px solid black;
+        margin-right: $margin_square_colors;
+
+        &.color_1 {
+          background-color: $footer_square_1;
+        }
+        &.color_2 {
+          background-color: $footer_square_2;
+        }
+        &.color_3 {
+          background-color: $footer_square_3;
+        }
+        &.color_4 {
+          background-color: $footer_square_4;
+        }
+        &.color_5 {
+          background-color: $footer_square_5;
+        }
       }
     }
   }

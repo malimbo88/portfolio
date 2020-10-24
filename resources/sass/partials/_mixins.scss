@@ -1,5 +1,15 @@
 // Partials / _mixins
 
+// General
+// -> icon Fontawesome
+@mixin fontawesome_pseudoclass {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 // Ui
 // -> icon
 @mixin crop_marks_icon {

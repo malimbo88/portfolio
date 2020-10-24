@@ -11,7 +11,12 @@
 
       {{-- Ui info --}}
       <div class="ui_info">
-        <span>Info sul mio portfolio</span>
+        <div class="name">
+          <span class="font-weight-bold">Name:</span><span class="font-weight-normal"> Nicola</span>
+        </div>
+        <div class="surname">
+          <span class="font-weight-bold">Surname:</span><span class="font-weight-normal"> Valente</span>
+        </div>
       </div>
       {{-- end Ui info --}}
 
@@ -46,7 +51,7 @@
         <span id="animation" class="crop_icon main_icon">+</span>
       </div>
       {{-- end Right crop mark --}}
-      
+
     </div>
     {{-- end Crop marks --}}
 

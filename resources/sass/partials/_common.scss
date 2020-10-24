@@ -12,6 +12,10 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100vh;
+  font-family: $font_assistant;
+  font-size: $general_font_size;
+  font-weight: 600;
+  color: $general_color;
 }
 
 // Main wrapper

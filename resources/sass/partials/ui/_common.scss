@@ -4,9 +4,17 @@
 div.ui {
   width: 100%;
 
+  // Top / Bottom ui
   & > [class*="_ui"] {
     height: $height_top_bottom_ui;
 
+    // Square colors
+    & .colors_palette > .square {
+      height: $square_colors_palette_size;
+      width: $square_colors_palette_size;
+    }
+
+    // Ui info
     & > .ui_info {
       & * {
         list-style: none;
@@ -16,6 +24,7 @@ div.ui {
     }
   }
 
+  // Crop marks
   .crop_marks {
     width: 100%;
 
@@ -26,7 +35,10 @@ div.ui {
       position: relative;
 
       & > .crop_icon {
+        font-family: $font_mplus;
         font-size: $ui_icon_font_size;
+        line-height: $corner_height;
+        font-weight: $ui_font_weight;
       }
 
       &.left > .glitch {

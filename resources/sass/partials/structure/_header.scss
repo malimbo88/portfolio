@@ -7,10 +7,42 @@ header {
       padding-left: $padding_left_right_ui;
       padding-right: $padding_left_right_ui;
 
-      & .colors_palette > .square {
-        height: $square_colors_palette_size;
-        width: $square_colors_palette_size;
+      // Ui info
+      & > .ui_info {
+        & > div {
+          display: inline-block;
+          margin-right: 10px;
+        }
 
+        & > .name {
+          @include fontawesome_pseudoclass;
+
+          &::before {
+            margin-right: $margin_right_icons_before;
+            font-family: "Font Awesome 5 Free";
+            font-size: 8px;
+            vertical-align: middle;
+            font-weight: 900;
+            content: "\f45c";
+          }
+        }
+
+        & > .surname {
+          @include fontawesome_pseudoclass;
+
+          &::before {
+            margin-right: $margin_right_icons_before;
+            font-family: "Font Awesome 5 Free";
+            font-size: 8px;
+            vertical-align: middle;
+            font-weight: 900;
+            content: "\f45c";
+          }
+        }
+      }
+
+      // Sqaure colors
+      & .colors_palette > .square {
         &.color_1 {
           background-color: $header_square_1;
         }

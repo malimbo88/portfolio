@@ -17057,6 +17057,10 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100vh;
+  font-family: "Assistant", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
 }
 
 .main_wrapper {
@@ -17070,9 +17074,43 @@ header .ui .top_ui {
   padding-right: 100px;
 }
 
-header .ui .top_ui .colors_palette > .square {
-  height: 20px;
-  width: 20px;
+header .ui .top_ui > .ui_info > div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header .ui .top_ui > .ui_info > .name {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header .ui .top_ui > .ui_info > .name::before {
+  margin-right: 2px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  vertical-align: middle;
+  font-weight: 900;
+  content: "\F45C";
+}
+
+header .ui .top_ui > .ui_info > .surname {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header .ui .top_ui > .ui_info > .surname::before {
+  margin-right: 2px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  vertical-align: middle;
+  font-weight: 900;
+  content: "\F45C";
 }
 
 header .ui .top_ui .colors_palette > .square.color_1 {
@@ -17113,7 +17151,7 @@ main > .content_wrapper > .content_left {
 main > .content_wrapper > .content_middle {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  background-color: lightgrey;
 }
 
 main > .content_wrapper > .content_right {
@@ -17131,13 +17169,31 @@ footer .ui .bottom_ui {
 }
 
 footer .ui .bottom_ui .ui_info > .socials_list > li {
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
 }
 
 footer .ui .bottom_ui .colors_palette > .square {
-  height: 20px;
-  width: 20px;
-  border: 1px solid black;
+  margin-right: 5px;
+}
+
+footer .ui .bottom_ui .colors_palette > .square.color_1 {
+  background-color: #0094ff;
+}
+
+footer .ui .bottom_ui .colors_palette > .square.color_2 {
+  background-color: #ff51af;
+}
+
+footer .ui .bottom_ui .colors_palette > .square.color_3 {
+  background-color: #fff500;
+}
+
+footer .ui .bottom_ui .colors_palette > .square.color_4 {
+  background-color: #000000;
+}
+
+footer .ui .bottom_ui .colors_palette > .square.color_5 {
+  background-color: #f94c00;
 }
 
 div.ui {
@@ -17146,6 +17202,11 @@ div.ui {
 
 div.ui > [class*=_ui] {
   height: 37.5px;
+}
+
+div.ui > [class*=_ui] .colors_palette > .square {
+  height: 15px;
+  width: 15px;
 }
 
 div.ui > [class*=_ui] > .ui_info * {
@@ -17165,7 +17226,10 @@ div.ui .crop_marks .corner {
 }
 
 div.ui .crop_marks .corner > .crop_icon {
+  font-family: "M PLUS 1p", sans-serif;
   font-size: 25px;
+  line-height: 25px;
+  font-weight: 300;
 }
 
 div.ui .crop_marks .corner.left > .glitch {
