@@ -17062,6 +17062,7 @@ body {
 .main_wrapper {
   width: inherit;
   height: 100%;
+  padding: 10px 30px 10px 30px;
 }
 
 header .ui .top_ui {
@@ -17106,7 +17107,7 @@ main > .content_wrapper {
 
 main > .content_wrapper > .content_left {
   height: 100%;
-  width: 50px;
+  width: 37.5px;
 }
 
 main > .content_wrapper > .content_middle {
@@ -17117,7 +17118,7 @@ main > .content_wrapper > .content_middle {
 
 main > .content_wrapper > .content_right {
   height: 100%;
-  width: 50px;
+  width: 37.5px;
 }
 
 footer .ui .corner .crop_icon {
@@ -17127,6 +17128,10 @@ footer .ui .corner .crop_icon {
 footer .ui .bottom_ui {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+footer .ui .bottom_ui .ui_info > .socials_list > li {
+  padding: 0 20px 0 20px;
 }
 
 footer .ui .bottom_ui .colors_palette > .square {
@@ -17141,6 +17146,12 @@ div.ui {
 
 div.ui > [class*=_ui] {
   height: 37.5px;
+}
+
+div.ui > [class*=_ui] > .ui_info * {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 div.ui .crop_marks {

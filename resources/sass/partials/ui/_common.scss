@@ -6,6 +6,14 @@ div.ui {
 
   & > [class*="_ui"] {
     height: $height_top_bottom_ui;
+
+    & > .ui_info {
+      & * {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+      }
+    }
   }
 
   .crop_marks {

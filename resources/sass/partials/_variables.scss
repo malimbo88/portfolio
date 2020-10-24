@@ -1,6 +1,9 @@
 // Partials / _variables
 
-//Ui
+// General
+$main_wrapper_external_padding:10px 30px 10px 30px;;
+
+//Ui Commons
 // -> Colors
 $ui_primary_color: black;
 
@@ -31,4 +34,7 @@ $bottom_final_state_position: $initial_bottom_position_crop_icon + $difference_b
 $top_final_state_position: $initial_bottom_position_crop_icon + $difference_between_glitch_state * 2;
 
 // Main
-$content-left-right-width: $corner_height * 2;
+$content-left-right-width: $corner_height * 1.5;
+
+// Footer
+$padding_social_icon: 0 20px 0 20px;

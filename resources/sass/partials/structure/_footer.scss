@@ -7,10 +7,21 @@ footer {
       transform: rotate(180deg);
     }
 
+    // Bottom ui
     & .bottom_ui {
       padding-left: $padding_left_right_ui;
       padding-right: $padding_left_right_ui;
 
+      // Ui info
+      .ui_info {
+        & > .socials_list {
+          & > li {
+            padding: $padding_social_icon;
+          }
+        }
+      }
+
+      // Square colors
       & .colors_palette > .square {
         height: $square_colors_palette_size;
         width: $square_colors_palette_size;

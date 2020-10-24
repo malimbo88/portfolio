@@ -18,4 +18,5 @@ body {
 .main_wrapper {
   width: inherit;
   height: 100%;
+  padding: $main_wrapper_external_padding;
 }
